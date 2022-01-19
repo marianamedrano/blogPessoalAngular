@@ -1,0 +1,25 @@
+.bg-laranja{
+    background-color: #F39C82;
+}
+
+.text-laranja{
+    color: #F39C82;
+}
+
+.cadastrar{
+    background-color: #91C2B4;
+    border: none;
+}
+
+.cadastrar:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cancelar{
+    background-color: #BF6145;
+    border: none;
+}
+
+.cancelar:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

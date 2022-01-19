@@ -1,0 +1,19 @@
+.bg-laranja{
+    background-color: #F39C82;
+}
+
+.text-laranja{
+    color: #F39C82;
+}
+
+.botao{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    color: #F39C82;
+}
+
+.botao:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #BF6145;
+    color: white;
+}

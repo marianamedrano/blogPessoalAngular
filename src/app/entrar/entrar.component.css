@@ -1,0 +1,16 @@
+.bg-laranja{
+    background-color: #F39C82;
+}
+
+.text-laranja{
+    color: #F39C82;
+}
+
+.entrar{
+    background-color: #91C2B4;
+    border: none;
+}
+
+.entrar:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
