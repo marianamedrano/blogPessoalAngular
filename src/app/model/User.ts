@@ -1,4 +1,6 @@
-export class UsuarioLogin{
+import { Postagem } from "./Postagem";
+
+export class User{
 
     public id: number;
     public nome: string;
@@ -6,6 +8,6 @@ export class UsuarioLogin{
     public senha: string;
     public foto: string;
     public tipo: string;
-    public token: string;
+    public postagem: Postagem[];
 
 }
