@@ -72,21 +72,21 @@
                     <label for="titulo">Título</label>
                     <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
                 </div>
-                <div class="formgroup">
+                <div class="formgroup mt-3">
                     <label for="texto">Texto</label>
                     <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
                 </div>
-                <div class="formgroup">
-                    <label for="texto">Escolha um tema ou <a routerLink="/tema" data-dismiss="modal">cadastre um novo.</a>: </label>
+                <div class="formgroup mt-3">
+                    <label for="texto">Escolha um tema ou <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a></label>
                     <select class="form-control" name="tema" id="tema">
                         <option value="">Temas</option>
                     </select>
                 </div>
 
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Publicar</button>
+            <div class="container d-flex justify-content-between">
+                <button type="button" class="cancelar px-5 py-2 mb-5" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="nova px-5 py-2 mb-5">Publicar</button>
             </div>
         </div>
     </div>

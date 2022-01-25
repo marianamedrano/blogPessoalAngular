@@ -6,6 +6,10 @@ h1{
     font-weight: 700;
 }
 
+h5{
+    font-family: Montserrat;
+}
+
 p{
     color: #868686;
     font-family: Lato;
@@ -22,6 +26,28 @@ p{
     width: 10rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+
+
+.cancelar{
+    bottom-style: none;
+    color: #BF6145;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BF6145;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: montserrat;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: none;
+}
+
+.cancelar:hover{
+    border-color: #582515;
+    color: #582515;
+}
+
 
 .ver{
     color: #868686;
@@ -61,4 +87,8 @@ p{
 .origami{
     height: 5rem;
     width: 5rem;
+}
+
+label{
+    font-family: Montserrat;
 }
