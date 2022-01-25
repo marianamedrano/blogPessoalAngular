@@ -1,3 +1,20 @@
+h2{
+    font-family: Montserrat;
+}
+
+h3{
+    font-family: Montserrat;
+}
+
+p{
+    font-family: Lato;
+    color: #505050;
+}
+
+label{
+    font-family: Lato;
+}
+
 .bg-laranja{
     background-color: #F39C82;
 }
@@ -7,11 +24,19 @@
 }
 
 .entrar{
-    background-color: #91C2B4;
-    border: none;
+    color: white;
+    background-color: #59ad9e;
+    border-style: none;
+    border-radius: 5px;
+    font-family: montserrat;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .entrar:hover{
+    background-color: #91C2B4;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 

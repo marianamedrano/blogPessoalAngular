@@ -1,0 +1,46 @@
+.bg-laranja{
+    background-color: #F39C82;
+}
+
+h1{
+    font-family: Montserrat;
+}
+
+h2{
+    font-family: Montserrat;
+    color: #BF6145;
+}
+
+p {
+    font-family: Lato;
+}
+
+th{
+    font-family: Montserrat;
+    color:#474747
+}
+
+td{
+    font-family: Lato;
+    color: #707070;
+}
+
+.t{
+    color: #BF6145
+}
+
+.cadastrar{
+    color: white;
+    background-color: #BF6145;
+    border-style: none;
+    border-radius: 5px;
+    font-family: montserrat;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.cadastrar:hover{
+    background-color: #8b3e27;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

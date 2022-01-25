@@ -2,31 +2,42 @@
         class="font-weight-bold">.</span></h2>
 <p class="text-black small text-center ">Relatos de visitas, viagens e passeios de Mariana Medrano pelo mundo e pela
     vida.</p>
+
 <p class="text-center mb-5 text-laranja"><i class="fa fa-heart" aria-hidden="true"></i></p>
+
 <div class="container card col-md-6">
     <div class="row d-flex justify-content-center">
         <div class="col-md-9 mt-5 mb-5">
             <h3 class="text-center text-black mb-5 mt-2">Cadastrar</h3>
+
             <div class="form-group">
                 <label for="">Nome</label>
                 <input [(ngModel)]='user.nome' type="text" class="form-control" placeholder="Nome">
             </div>
+
             <div class="form-group">
                 <label for="usuario" class="text-black">Usuário</label>
-                <input [(ngModel)]='user.usuario' class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite seu usuário">
+                <input [(ngModel)]='user.usuario' class="form-control" type="text" name="usuario" id="usuario"
+                    placeholder="Digite seu usuário">
             </div>
+
             <div class="form-group">
                 <label for="senha" class="text-black">Senha</label>
-                <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" placeholder="Digite sua senha">
+                <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha"
+                    placeholder="Digite sua senha">
             </div>
+
             <div class="form-group">
                 <label for="">Confirmar senha</label>
-                <input [(ngModel)]='user.senha' class="form-control" type="password" name="senha" placeholder="Digite novamente sua senha">
+                <input [(ngModel)]='user.senha' class="form-control" type="password" name="senha"
+                    placeholder="Digite novamente sua senha">
             </div>
+
             <div class="form-group">
                 <label for="">Link da foto</label>
                 <input [(ngModel)]='user.foto' type="text" class="form-control" placeholder="URL Foto">
             </div>
+
             <div class="form-group">
                 <label for="">Selecione o tipo de usuario</label>
                 <select (change)='tipoUser($event)' name="" id="" class="form-control">
@@ -35,10 +46,13 @@
                     <option value="normal">Padrão</option>
                 </select>
             </div>
+
             <div class="d-flex justify-content-around">
                 <button type="submit" class="btn btn-info cancelar mt-3 pl-5 pr-5"
                     routerLink='/entrar'>Cancelar</button>
-                <button (click)='cadastrar()' type="submit" class="btn btn-info cadastrar mt-3 pl-5 pr-5">Cadastrar</button>
+
+                <button type="submit" class="btn btn-info cadastrar mt-3 pl-5 pr-5"
+                    (click)='cadastrar()'>Cadastrar</button>
             </div>
         </div>
     </div>

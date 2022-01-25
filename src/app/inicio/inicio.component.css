@@ -1,0 +1,64 @@
+h1{
+    
+    color: #F39C82;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+p{
+    color: #868686;
+    font-family: Lato;
+}
+
+
+.nome{
+    color: #0D0C22;
+    font-weight: 300;
+}
+
+.fotoperfil{
+    height: 10rem;
+    width: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.ver{
+    color: #868686;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #868686;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: montserrat;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: none;
+    
+}
+
+.ver:hover{
+    border-color: #525252;
+    color: #525252;
+}
+
+.nova{
+        color: white;
+        background-color: #59ad9e;
+        border-style: none;
+        border-radius: 5px;
+        font-family: montserrat;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+}
+
+.nova:hover{
+    background-color: #91C2B4;
+}
+
+
+.origami{
+    height: 5rem;
+    width: 5rem;
+}
