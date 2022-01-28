@@ -4,6 +4,7 @@
 
 h1{
     font-family: Montserrat;
+    color:#F39C82;
 }
 
 h2{
@@ -13,6 +14,7 @@ h2{
 
 p {
     font-family: Lato;
+    color:#474747
 }
 
 th{
@@ -29,9 +31,14 @@ td{
     color: #BF6145
 }
 
-.cadastrar{
-    color: white;
+.tema{
+    text-transform: lowercase;
+    color: #BF6145
+}
+
+.cancelar{
     background-color: #BF6145;
+    color: white;
     border-style: none;
     border-radius: 5px;
     font-family: montserrat;
@@ -40,19 +47,24 @@ td{
     padding: 10px;
 }
 
-.cadastrar:hover{
-    background-color: #8b3e27;
+.cancelar:hover{
+    background-color: #83351e;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.del{
+.atualizar{
+    color: white;
+    background-color: #59ad9e;
     border-style: none;
-    background-color: transparent;
-    color: #8b3e27;
+    border-radius: 5px;
+    font-family: montserrat;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.edit{
-    color: #59ad9e;
-    background-color: transparent;
-    border-style: none;
-    }
+.atualizar:hover{
+    background-color: #91C2B4;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

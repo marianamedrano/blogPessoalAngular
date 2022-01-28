@@ -28,11 +28,11 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="descricao"
+                                <input [(ngModel)]='tema.descricao' type="text" class="form-control" id="descricao"
                                     placeholder="Descreva o tema a cadastrar">
                             </div>
                             <div class="d-flex justify-content-center text-white">
-                                <button class="cadastrar mt-3 px-5">Cadastrar tema</button>
+                                <button (click)='cadastrar()' class="cadastrar mt-3 px-5">Cadastrar tema</button>
                             </div>
                         </div>
 
@@ -76,28 +76,20 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Primeiro</th>
-                        <th scope="col">Último</th>
-                        <th scope="col">Nickname</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col" class="d-flex justify-content-end">Modificações</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                    <tr *ngFor='let item of listaTemas'>
+                        <th>{{item.id}}</th>
+                        <td>{{item.descricao}}</td>
+                        <td class="d-flex justify-content-end">
+                            <button class="edit mx-1" [routerLink]="['/tema-edit', item.id]"><i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
+                            <button class="del mx-1" [routerLink]="['/tema-delete', item.id]"><i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>

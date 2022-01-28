@@ -1,0 +1,16 @@
+<div class="container col-md-6 pt-5 mt-5">
+    <h1><span class="t font-weight-bold text-center">.</span>{{tema.descricao}}</h1>
+
+    <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <input type="text" class="form-control" id="descricao" [(ngModel)]='tema.descricao'>
+    </div>
+
+    <div class="row py-3">
+        <div class="col-md-8">
+            <button routerLink='/tema' class="cancelar px-3 py-2 mr-2">Cancelar</button>
+            <button (click)='atualizar()' class="atualizar px-3 py-2 m-2">Atualizar</button>
+        </div>
+    </div>
+
+</div>

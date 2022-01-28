@@ -1,0 +1,14 @@
+<div class="container col-md-6 pt-5 mt-5">
+    <h1><span class="t font-weight-bold text-center">.</span>{{tema.descricao}}</h1>
+    <p class="m-0 pt-2 d-flex justify-content-center">Você está prestes a excluir o tema {{tema.descricao}}. Se você excluir este tema, todas as
+        postagens relacionadas a ele também serão excluídas.</p>
+    <p class="m-0 pt-2 font-weight-bold">Tem certeza que deseja prosseguir?</p>
+
+    <div class="row py-3">
+        <div class="col-md-8">
+            <button class="voltar px-3 py-2 mr-2" routerLink='/tema'>Voltar</button>
+            <button class="excluir px-3 py-2 m-2" (click)='apagar()'>Excluir permanentemente</button>
+        </div>
+    </div>
+
+</div>
