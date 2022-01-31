@@ -4,7 +4,7 @@
                 class="font-weight-bold">.</span></a>
     </div>
     <div class="mr-2 row d-flex align-items-center">
-        <a routerLink="/inicio"><img src="{{foto}}" alt="{{nome}}" class="foto"></a> 
+        <a [routerLink]="['/user-edit', id]"><img src="{{foto}}" alt="{{nome}}" class="foto"></a> 
         <a (click)='sair()'><i class="fa fa-chevron-circle-right ml-3 sair" aria-hidden="true"></i></a>
     </div>
 </nav>

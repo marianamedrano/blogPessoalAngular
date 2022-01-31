@@ -63,6 +63,12 @@
                         <p class="card-text">{{item.texto}}</p>
                         <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
                         <p class="card-text"><small class="text-muted">{{nome}}</small></p>
+                    
+                        <a class="small mr-2" [routerLink]="['/postagem-edit', item.id]">Editar</a>
+                        <a class="small ml-2" [routerLink]="['/postagem-delete', item.id]">Apagar</a>
+                    
+                    
+
                     </div>
                 </div>
 

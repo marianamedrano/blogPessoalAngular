@@ -15,6 +15,7 @@ export class MenulogadoComponent implements OnInit {
 
   nome = environment.nome 
   foto = environment.foto
+  id = environment.id
 
 
   ngOnInit() {

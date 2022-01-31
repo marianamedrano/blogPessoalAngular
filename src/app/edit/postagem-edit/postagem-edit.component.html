@@ -1,0 +1,19 @@
+<div class="formgroup">
+    <label for="titulo">Título</label>
+    <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo"
+        placeholder="Digite o título">
+</div>
+<div class="formgroup mt-3">
+    <label for="texto">Texto</label>
+    <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto"
+        rows="3"></textarea>
+</div>
+<!-- <div class="formgroup mt-3">
+    <label for="texto">Escolha um tema:</label>
+    <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change)='findByIdTema()'>
+        <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
+    </select>
+</div> -->
+
+    <button routerLink='/inicio' class="mr-2">Cancelar</button>
+    <button (click)='atualizar()' class="ml-2">Atualizar</button>
