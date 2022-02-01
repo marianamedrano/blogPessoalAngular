@@ -41,6 +41,7 @@ export class InicioComponent implements OnInit {
     if(environment.token == ''){
       alert('Sua sessão expirou. Faça o login novamente.')
       this.router.navigate(['/entrar'])
+      
       environment.token = ''
       environment.nome = ''
       environment.foto = ''
@@ -51,9 +52,7 @@ export class InicioComponent implements OnInit {
     this.getAllTema();
     this.getAllPostagens();
   }
-
-    
-
+  
   getAllTema(){
     this.temaService.getAllTema().subscribe((resp: Tema[]) => {
       this.listaTemas = resp
